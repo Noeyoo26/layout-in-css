@@ -7,28 +7,59 @@
     <link rel="stylesheet" href="../style.css">
     <style>
       body{
+        margin:0;
+        padding:1em;
+        /* display:flex; */
+        /* flex-wrap:wrap; */
+        gap:1em;
         display:grid;
         grid-template-columns: 5fr 5fr;
         grid-template-rows: 10fr 1fr 2fr;
         gap: 1em;
       }
+
+      header {
+        /* flex-basis:100%; */
+
+        /* order:-2; */
+
+        /* height:calc(100dvh - 8em - 10em - 2em - 16px); */
+      }
+
       footer{
-      grid-column-start: 1; 
-      grid-column-end: -1;
-      grid-row-start: 2;
+        /* order:-1; */
+        /* flex-basis:100%; */
+        grid-column-start: 1; 
+        grid-column-end: -1;
+        grid-row-start: 2;
+    
+        /* height:8em; */
       }
       
+      nav {
+        /* flex-grow:1; */
+        /* flex-basis: 0; */
+        /* height:10em; */
+      }
+
       main{
+        /* flex-grow:1; */
+        /* flex-basis: 0; */
+        /* height:10em; */
         grid-row-start: 1;
         grid-column-start: 1; 
-      grid-column-end: -1;
+        grid-column-end: -1;
       }
+      
+      
+      
+      
     </style>
   </head>
   <body id="basic-layout-3">
     <header><h1>Basic Layout 3</h1></header>
     <nav><a href="../index.html">Terug naar het overzicht</a></nav>
-    <main></main>
-    <footer></footer>
+    <main>main</main>
+    <footer>footer</footer>
   </body>
 </html>
